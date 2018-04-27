@@ -421,24 +421,29 @@ Realiza todos os tipos de Instalações elétricas, Elétrica residencial, elét
                             Email: contato@insteletric.com.br</p>
                     </div>
                 </div>
-                <div data-form-type="formoid">
-                    <div data-form-alert="" hidden="">Thanks for filling out the form!</div>
-                    <form class="block mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="4SWgkbunHbSLez+w1nX2dRzf5bxgg9CTHmDHShbm3lqtnoMGkeSQ9w9d3u5p67Qo+jllx9dFoDIesefNSuMSQKPUjhaDGAaYNjZ5akTIaUpiYxdYzWdhI8PIy6x89zLG" data-form-field="Email">
+                <div>
+                    <div style="display: none;" id="form-success">
+                        <div class="alert alert-form alert-success text-xs-center animated fadeInUp">Obrigado pelo contato, em breve retornaremos!</div>
+                    </div>
+                    <form class="block mbr-form" action="sendMailContact.php" method="POST">
                         <div class="row">
-                            <div class="col-md-6 multi-horizontal" data-for="name">
-                                <input type="text" class="form-control input" name="name" data-form-field="Name" placeholder="Seu Nome" required="" id="name-form4-p">
+                                <div class="col-md-6 multi-horizontal" data-for="name">
+                                    <input type="text" class="form-control input" name="name" data-form-field="Name" placeholder="Nome" required="" id="name-form4-z">
+                                </div>
+                                <div class="col-md-6 multi-horizontal" data-for="phone">
+                                    <input type="tel" class="form-control input" name="phone" data-form-field="Phone" placeholder="Telefone" required="" id="phone-form4-z">
+                                </div>
+                                <div class="col-md-12" data-for="email">
+                                    <input type="email" class="form-control input" name="email" data-form-field="Email" placeholder="E-mail" required="" id="email-form4-z">
+                                </div>
+                                <div class="col-md-12" data-for="message">
+                                    <textarea class="form-control input" name="message" rows="3" data-form-field="Message" placeholder="Mensagem" style="resize:none"
+                                        id="message-form4-z"></textarea>
+                                </div>
+                                <div class="input-group-btn col-md-12" style="margin-top: 10px;">
+                                    <button href="" type="submit" class="btn btn-form btn-secondary display-4">Enviar mensagem</button>
+                                </div>
                             </div>
-                            <div class="col-md-6 multi-horizontal" data-for="phone">
-                                <input type="text" class="form-control input" name="phone" data-form-field="Phone" placeholder="Telefone" required="" id="phone-form4-p">
-                            </div>
-                            <div class="col-md-12" data-for="email">
-                                <input type="text" class="form-control input" name="email" data-form-field="Email" placeholder="Email" required="" id="email-form4-p">
-                            </div>
-                            <div class="col-md-12" data-for="message">
-                                <textarea class="form-control input" name="message" rows="3" data-form-field="Message" placeholder="Mensagem" style="resize:none" id="message-form4-p"></textarea>
-                            </div>
-                            <div class="input-group-btn col-md-12" style="margin-top: 10px;"><button href="" type="submit" class="btn btn-form btn-secondary display-4">ENVIAR MENSAGEM</button></div>
-                        </div>
                     </form>
                 </div>
             </div>
@@ -542,7 +547,13 @@ Realiza todos os tipos de Instalações elétricas, Elétrica residencial, elét
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/slidervideo/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
-  
+  <script>
+        $(document).ready(function () {
+            if (window.location.href.includes('#form4-p')) {
+                $('#form-success').css('display', 'block');
+            }
+        });
+    </script>
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i></i></a></div>
     <input name="animation" type="hidden">
