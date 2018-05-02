@@ -49,10 +49,10 @@ body {
 }
 .display-7 {
   font-family: 'Rubik', sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .display-7 > .mbr-iconfont {
-  font-size: 1.6rem;
+  font-size: 1.28rem;
 }
 /* ---- Fluid typography for mobile devices ---- */
 /* 1.4 - font scale ratio ( bootstrap == 1.42857 ) */
@@ -654,13 +654,13 @@ a:hover {
   box-shadow: none;
   color: #565656;
   font-family: 'Rubik', sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.43;
   min-height: 3.5em;
   padding: 1.07em .5em;
 }
 .form-control > .mbr-iconfont {
-  font-size: 1.6rem;
+  font-size: 1.28rem;
 }
 .form-control,
 .form-control:focus {
@@ -2121,47 +2121,40 @@ body {
 .cid-qQ4lJ6Elhl .card-title {
   text-align: center;
 }
-.cid-qQqBv6MJ94 {
-  padding-top: 60px;
-  padding-bottom: 0px;
-  background-color: #ffffff;
+.cid-qQV2R9zxQi {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-image: url("../../../assets/images/utilitarios1-1487x700.jpg");
 }
-.cid-qQqBv6MJ94 .mbr-section-subtitle {
+.cid-qQV2R9zxQi h3 {
+  font-weight: 300;
+}
+.cid-qQV2R9zxQi .card-img {
+  width: initial;
+}
+.cid-qQV2R9zxQi .card-img .mbr-iconfont {
+  font-size: 48px;
+  padding-right: 1rem;
+}
+.cid-qQV2R9zxQi .media-container-row {
+  word-wrap: break-word;
+  padding-bottom: 2rem;
+  height: 100%;
+}
+.cid-qQV2R9zxQi .media {
+  margin: initial;
+  align-items: center;
+}
+.cid-qQV2R9zxQi .mbr-section-subtitle {
   color: #767676;
 }
-.cid-qQqB6D2k39 {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  background-color: #ffffff;
-}
-.cid-qQqB6D2k39 .card-box {
-  background-color: #ffffff;
-  padding: 2rem;
-}
-.cid-qQqB6D2k39 h4 {
-  font-weight: 500;
-  margin-bottom: 0;
-  text-align: left;
-}
-.cid-qQqB6D2k39 p {
+.cid-qQV2R9zxQi .mbr-text {
   color: #767676;
-  text-align: left;
 }
-.cid-qQqB6D2k39 .card-wrapper {
-  position: relative;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-  transition: box-shadow 0.3s;
-}
-.cid-qQqB6D2k39 .card-wrapper:hover {
-  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
-  transition: box-shadow 0.3s;
-}
-.cid-qQqB6D2k39 .card-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
+.cid-qQV2R9zxQi .media-container-column {
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
 }
 .cid-qQ4rO0FV3J {
   padding-top: 90px;
@@ -2534,6 +2527,7 @@ body {
 }
 .cid-qPASrr1lPM P {
   color: #232323;
+  text-align: left;
 }
 .cid-qPASrr1lPM .copyright > p {
   color: #898989;
